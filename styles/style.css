@@ -1,0 +1,62 @@
+@import './meyer-reset.css';
+
+/* SETUP */
+* {
+    box-sizing: border-box;
+}
+
+/* SETTINGS */
+
+
+/* STRUCTURE */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+section {
+    flex-grow: 1;
+}
+
+inner-column {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+}
+
+/* TYPOGRAPHY */
+
+
+/* MODULES */
+draw-grid {
+    display: flex;
+}
+
+/* COMPONENTS */
+
+
+/* DEV SETTINGS */
+header, main {
+    border: 4px solid red;
+    min-height: 200px;
+}
+
+section {
+    border: 4px solid lime;
+    min-height: 200px;
+}
+
+inner-column {
+    border: 4px solid orange;
+    min-height: 200px;
+}
+
+draw-grid {
+    border: 4px solid blue;
+}
