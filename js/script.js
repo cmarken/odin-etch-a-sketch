@@ -31,9 +31,9 @@ function drawGrid(x) {
 
 // onLeaveColorPixel(e)
     // select pixel from the event
-    // change background color of the pixel to black
+    // change background color of the pixel to grey
 function onLeaveColorPixel(e) {
-        console.log(e.srcElement);
+        e.srcElement.setAttribute('style', 'background-color: #555555');
     }
     
 // onResizeGridClick(e)
