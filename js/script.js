@@ -43,7 +43,10 @@ function onLeaveColorPixel(e) {
     // remove all rows (and their pixels) with container.replaceChildren()
     // call drawGrid with size
 function onResizeGridClick() {
-    const x = prompt('Input a number N to get a grid with the size of N * N (n <= 100)');
+    let x = 101;
+    while (x > 100) { 
+        x = prompt('Input a number N to get a grid with the size of N * N (n <= 100)');
+    }
 
     const pixelGrid = document.querySelector('pixel-grid');
     pixelGrid.replaceChildren();
